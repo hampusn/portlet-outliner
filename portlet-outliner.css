@@ -8,12 +8,12 @@
 /* GENERAL PORTLET STYLING */
 
 .outline-portlets div[class*="portlet"][id] {
-  outline: 1px solid rgba(255, 0, 0, 0.4) !important;
+  outline: 1px solid rgba(0, 0, 0, 0.4);
   position: relative !important;
 }
 
 .outline-portlets div[class*="portlet"][id]:after {
-  background: red;
+  background: #000;
   content: attr(class);
   color: #fff;
   font-size: 13px;
@@ -43,7 +43,7 @@
 
 .outline-portlets .sv-text-portlet:after,
 .outline-portlets .sv-image-portlet:after {
-  background: green;
+  background: green !important;
 }
 
 /* Integration portlets */
@@ -56,34 +56,53 @@
 .outline-portlets .sv-script-portlet:after,
 .outline-portlets .sv-html-portlet:after,
 .outline-portlets .sv-iframe-portlet:after {
-  background: #f00;
+  background: #f00 !important;
 }
 
 /* Templating portlets */
-.outline-portlets .sv-jcrmenu-portlet {
+.outline-portlets .sv-jcrmenu-portlet,
+.outline-portlets .sv-searchform-portlet,
+.outline-portlets .sv-multilevellink-portlet,
+.outline-portlets .sv-related-portlet {
   outline-color: rgba(150, 150, 0, 0.4) !important;
 }
 
-.outline-portlets .sv-jcrmenu-portlet:after {
-  background: rgb(150, 150, 0);
+.outline-portlets .sv-jcrmenu-portlet:after,
+.outline-portlets .sv-searchform-portlet:after,
+.outline-portlets .sv-multilevellink-portlet:after,
+.outline-portlets .sv-related-portlet:after {
+  background: rgb(150, 150, 0) !important;
 }
 
 /* Interactive portlets */
-.outline-portlets .sv-form-portlet {
+.outline-portlets .sv-form-portlet,
+.outline-portlets .sv-simplesubscription-portlet {
   outline-color: rgba(0, 150, 150, 0.4) !important;
 }
 
-.outline-portlets .sv-form-portlet:after {
-  background: rgb(0, 150, 150);
+.outline-portlets .sv-form-portlet:after,
+.outline-portlets .sv-simplesubscription-portlet:after {
+  background: rgb(0, 150, 150) !important;
+}
+
+/* Social media portlets */
+.outline-portlets .sv-twittersearch-portlet {
+  outline-color: rgba(255, 0, 254, 0.4) !important;
+}
+
+.outline-portlets .sv-twittersearch-portlet:after {
+  background: #ff00fe !important;
 }
 
 /* Misc portlets */
-.outline-portlets .sv-archive-portlet {
+.outline-portlets .sv-archive-portlet,
+.outline-portlets .sv-eventcalendar-portlet {
   outline-color: rgba(0, 0, 255, 0.4) !important;
 }
 
-.outline-portlets .sv-archive-portlet:after {
-  background: blue;
+.outline-portlets .sv-archive-portlet:after,
+.outline-portlets .sv-eventcalendar-portlet:after {
+  background: blue !important;
 }
 
 
@@ -119,5 +138,29 @@
 
 .outline-portlets .sv-form-portlet:after {
   content: "E-postformulär" !important;
+}
+
+.outline-portlets .sv-searchform-portlet:after {
+  content: "Sökruta" !important;
+}
+
+.outline-portlets .sv-multilevellink-portlet:after {
+  content: "Flernivålänk" !important;
+}
+
+.outline-portlets .sv-related-portlet:after {
+  content: "Relaterad information" !important;
+}
+
+.outline-portlets .sv-simplesubscription-portlet:after {
+  content: "Prenumerera" !important;
+}
+
+.outline-portlets .sv-twittersearch-portlet:after {
+  content: "Twitter-sökning" !important;
+}
+
+.outline-portlets .sv-eventcalendar-portlet:after {
+  content: "Evenemangskalender" !important;
 }
 
