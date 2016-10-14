@@ -1,25 +1,37 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Portlet Outliner - sets an outline around portlets for easier debugging</title>
+  <meta charset="utf-8">
+  <title>Portlet Outliner - undrar du också vilka portlets du faktiskt använder?</title>
+  <meta name="description" content="Hjälpande verktyg för att tydliggöra vilka portlets som används på en webbsida i SiteVision.">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <script>
-    (function () {
-      var linkId = 'portlet-outliner';
-      var toggleClass = 'outline-portlets';
-      var href = '...';
-      if(!document.getElementById(linkId)) {
-        var link = document.createElement('link');
-        link.setAttribute('id', linkId);
-        link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('type', 'text/css');
-        link.setAttribute('href', '');
-        document.head.appendChild(link);
-      }
-      document.body.classList.toggle(toggleClass);
-    })();
-  </script>
+  <header>
+    <h1 class="container">Portlet Outliner - undrar du också vilka portlets du faktiskt använder?</h1>
+  </header>
+
+  <div class="page container">
+    <h2>Vad är det här?</h2>
+    <p>Portlet Outliner är ett litet hjälpande verktyg för att tydliggöra vilka portlets som används på en webbsida under en <a href="http://www.sitevision.se/" title="Läs mer om SiteVision på deras egna webbplats.">SiteVision</a>-webb.</p>
+    <p>När verktyget används så visas en tunn kant runt om varje portlet och en etikett med portletens namn skrivs ut. Nedan ser ni två exempelbilder på hur det ser ut före och efter att verktyget använts.</p>
+
+    <p>[EXEMPELBILDER HÄR]</p>
+
+    <h2>Hur installerar jag?</h2>
+    <p>För att installera den här funktionen drar och släpper du länken nedan på din bokmärkesrad.</p>
+
+    <p class="bookmarklet">
+      <a class="bookmarklet-btn" href='javascript:!function(a,b,c,d){if(!a.getElementById(b)){var e=a.createElement("link");e.setAttribute("id",b),e.setAttribute("rel","stylesheet"),e.setAttribute("type","text/css"),e.setAttribute("href",d),a.head.appendChild(e)}a.body.classList.toggle(c)}(document,"portlet-outliner","outline-portlets","https://hampusn.github.io/portlet-outliner/portlet-outliner.css");'>Visa/Dölj portlets</a>
+    </p>
+  </div>
+
+  <footer>
+    <a href="https://github.com/hampusn/portlet-outliner" title="Gå till källkoden på Github.">portlet-outliner på github.com</a>
+    <a href="https://hampusnord.in" title="Gå till hampusnord.in">Ett projekt av hampusnord.in</a>
+  </footer>
 </body>
 </html>

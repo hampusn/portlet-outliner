@@ -1,0 +1,123 @@
+/**
+ * Portlet Outliner - Main styling
+ * @author Hampus Nordin <nordin.hampus@gmail.com>
+ * @version 0.1.0
+ */
+
+/* GENERAL */
+
+html {
+  background: #eee;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 1.4em 0;
+}
+
+h2 {
+  color: #263321;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0.7em 0 0.3em;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 0 0 1em;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/* STRUCTURE */
+
+header,
+.page,
+footer {
+  padding: 2rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70rem;
+}
+
+
+/* HEADER */
+
+header {
+  background: #42573b;
+  color: #fff;
+  overflow: hidden;
+}
+
+
+/* MAIN */
+
+.bookmarklet {
+  text-align: center;
+}
+
+.bookmarklet-btn {
+  background: #5a764f;
+  border-bottom: 3px solid #2b3926;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 1.5em 0;
+  padding: 0.4em 0.8em;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: background-color 0.15s ease-out;
+          transition: background-color 0.15s ease-out;
+}
+
+.bookmarklet-btn:hover {
+  background: #719464;
+  border-bottom-color: #42573b;
+}
+
+
+/* FOOTER */
+
+footer {
+  font-size: 1.4em;
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+
+/* RESPONSIVE */
+
+@media all and (max-device-width: 800px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
