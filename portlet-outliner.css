@@ -90,34 +90,34 @@
 /* PORTLET LABELS */
 
 .outline-portlets .sv-text-portlet:after {
-  content: "Text";
+  content: "Text" !important;
 }
 
 .outline-portlets .sv-image-portlet:after {
-  content: "Bild";
+  content: "Bild" !important;
 }
 
 .outline-portlets .sv-script-portlet:after {
-  content: "Skript";
+  content: "Skript" !important;
 }
 
 .outline-portlets .sv-html-portlet:after {
-  content: "HTML";
+  content: "HTML" !important;
 }
 
 .outline-portlets .sv-iframe-portlet:after {
-  content: "iFrame";
+  content: "iFrame" !important;
 }
 
 .outline-portlets .sv-archive-portlet:after {
-  content: "Nyheter";
+  content: "Nyheter" !important;
 }
 
 .outline-portlets .sv-jcrmenu-portlet:after {
-  content: "Meny";
+  content: "Meny" !important;
 }
 
 .outline-portlets .sv-form-portlet:after {
-  content: "E-postformulär";
+  content: "E-postformulär" !important;
 }
 
