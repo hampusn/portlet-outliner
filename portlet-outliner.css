@@ -7,12 +7,12 @@
 
 /* GENERAL PORTLET STYLING */
 
-.outline-portlets div[class*="portlet"] {
+.outline-portlets div[class*="portlet"][id] {
   outline: 1px solid rgba(255, 0, 0, 0.4) !important;
   position: relative !important;
 }
 
-.outline-portlets div[class*="portlet"]:after {
+.outline-portlets div[class*="portlet"][id]:after {
   background: red;
   content: attr(class);
   color: #fff;
@@ -27,7 +27,7 @@
   z-index: 10;
 }
 
-.outline-portlets div[class*="portlet"]:hover:after {
+.outline-portlets div[class*="portlet"][id]:hover:after {
   opacity: 1;
 }
 
