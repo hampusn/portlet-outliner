@@ -32,12 +32,20 @@ h2 {
   color: #263321;
   font-size: 2rem;
   line-height: 1.2;
-  margin: 0.7em 0 0.3em;
+  margin: 1.7em 0 0.3em;
 }
 
 p {
   font-size: 1.6rem;
   margin: 0 0 1em;
+}
+
+img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 40rem;
 }
 
 a {
