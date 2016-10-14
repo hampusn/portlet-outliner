@@ -29,37 +29,95 @@
 
 .outline-portlets div[class*="portlet"][id]:hover:after {
   opacity: 1;
+  z-index: 20;
 }
 
 
-/* KNOWN PORTLETS */
+/* PORTLET BACKGROUNDS */
 
-/* Text portlet */
-.outline-portlets div[class*="sv-text-portlet"][id] {
+/* Standard portlets */
+.outline-portlets .sv-text-portlet,
+.outline-portlets .sv-image-portlet {
   outline-color: rgba(0, 255, 0, 0.4) !important;
 }
 
-.outline-portlets div[class*="sv-text-portlet"][id]:after {
+.outline-portlets .sv-text-portlet:after,
+.outline-portlets .sv-image-portlet:after {
   background: green;
-  content: "Text";
 }
 
-/* Archive portlet */
-.outline-portlets div[class*="sv-archive-portlet"] {
-  outline-color: rgba(0, 0, 255, 0.4) !important;
+/* Integration portlets */
+.outline-portlets .sv-script-portlet,
+.outline-portlets .sv-html-portlet,
+.outline-portlets .sv-iframe-portlet {
+  outline-color: rgba(255, 0, 0, 0.4) !important;
 }
 
-.outline-portlets div[class*="sv-archive-portlet"]:after {
-  background: blue;
-  content: "Nyheter";
+.outline-portlets .sv-script-portlet:after,
+.outline-portlets .sv-html-portlet:after,
+.outline-portlets .sv-iframe-portlet:after {
+  background: #f00;
 }
 
-/* Image portlet */
-.outline-portlets div[class*="sv-image-portlet"] {
+/* Templating portlets */
+.outline-portlets .sv-jcrmenu-portlet {
+  outline-color: rgba(150, 150, 0, 0.4) !important;
+}
+
+.outline-portlets .sv-jcrmenu-portlet:after {
+  background: rgb(150, 150, 0);
+}
+
+/* Interactive portlets */
+.outline-portlets .sv-form-portlet {
   outline-color: rgba(0, 150, 150, 0.4) !important;
 }
 
-.outline-portlets div[class*="sv-image-portlet"]:after {
+.outline-portlets .sv-form-portlet:after {
   background: rgb(0, 150, 150);
+}
+
+/* Misc portlets */
+.outline-portlets .sv-archive-portlet {
+  outline-color: rgba(0, 0, 255, 0.4) !important;
+}
+
+.outline-portlets .sv-archive-portlet:after {
+  background: blue;
+}
+
+
+/* PORTLET LABELS */
+
+.outline-portlets .sv-text-portlet:after {
+  content: "Text";
+}
+
+.outline-portlets .sv-image-portlet:after {
   content: "Bild";
 }
+
+.outline-portlets .sv-script-portlet:after {
+  content: "Skript";
+}
+
+.outline-portlets .sv-html-portlet:after {
+  content: "HTML";
+}
+
+.outline-portlets .sv-iframe-portlet:after {
+  content: "iFrame";
+}
+
+.outline-portlets .sv-archive-portlet:after {
+  content: "Nyheter";
+}
+
+.outline-portlets .sv-jcrmenu-portlet:after {
+  content: "Meny";
+}
+
+.outline-portlets .sv-form-portlet:after {
+  content: "E-postformulär";
+}
+
