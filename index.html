@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Portlet Outliner - sets an outline around portlets for easier debugging</title>
+</head>
+<body>
+  <script>
+    (function () {
+      var linkId = 'portlet-outliner';
+      var toggleClass = 'outline-portlets';
+      var href = '...';
+      if(!document.getElementById(linkId)) {
+        var link = document.createElement('link');
+        link.setAttribute('id', linkId);
+        link.setAttribute('rel', 'stylesheet');
+        link.setAttribute('type', 'text/css');
+        link.setAttribute('href', '');
+        document.head.appendChild(link);
+      }
+      document.body.classList.toggle(toggleClass);
+    })();
+  </script>
+</body>
+</html>

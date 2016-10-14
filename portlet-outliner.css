@@ -1,0 +1,53 @@
+/* Portlet Outliner v0.1.0 */
+
+.outline-portlets div[class*="portlet"] {
+   outline: 1px solid rgba(255, 0, 0, 0.4) !important;
+   position: relative !important;
+}
+
+.outline-portlets div[class*="portlet"]:after {
+   background: red;
+   content: attr(class);
+   color: #fff;
+   font-size: 13px;
+   line-height: 1.2;
+   opacity: 0.5;
+   padding: 0.2em 0.5em;
+   position: absolute;
+   right: 0;
+   text-align: right;
+   top: 0;
+   z-index: 10;
+}
+
+.outline-portlets div[class*="portlet"]:hover:after {
+   opacity: 1;
+}
+
+
+
+/* Known portlets */
+
+.outline-portlets div[class*="sv-text-portlet"] {
+   outline-color: rgba(0, 255, 0, 0.4) !important;
+}
+.outline-portlets div[class*="sv-text-portlet"]:after {
+   background: green;
+   content: "Text";
+}
+
+.outline-portlets div[class*="sv-archive-portlet"] {
+   outline-color: rgba(0, 0, 255, 0.4) !important;
+}
+.outline-portlets div[class*="sv-archive-portlet"]:after {
+   background: blue;
+   content: "Nyheter";
+}
+
+.outline-portlets div[class*="sv-image-portlet"] {
+   outline-color: rgba(0, 150, 150, 0.4) !important;
+}
+.outline-portlets div[class*="sv-image-portlet"]:after {
+   background: rgb(0, 150, 150);
+   content: "Bild";
+}
