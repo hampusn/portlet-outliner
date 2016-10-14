@@ -7,12 +7,12 @@
 
 /* GENERAL PORTLET STYLING */
 
-.outline-portlets div[class*="portlet"][id] {
+div[class*="portlet"][id] {
   outline: 1px solid rgba(0, 0, 0, 0.4);
   position: relative !important;
 }
 
-.outline-portlets div[class*="portlet"][id]:after {
+div[class*="portlet"][id]:after {
   background: #000;
   content: attr(class);
   color: #fff;
@@ -27,7 +27,7 @@
   z-index: 10;
 }
 
-.outline-portlets div[class*="portlet"][id]:hover:after {
+div[class*="portlet"][id]:hover:after {
   opacity: 1;
   z-index: 20;
 }
@@ -36,131 +36,130 @@
 /* PORTLET BACKGROUNDS */
 
 /* Standard portlets */
-.outline-portlets .sv-text-portlet,
-.outline-portlets .sv-image-portlet {
+.sv-text-portlet,
+.sv-image-portlet {
   outline-color: rgba(0, 255, 0, 0.4) !important;
 }
 
-.outline-portlets .sv-text-portlet:after,
-.outline-portlets .sv-image-portlet:after {
+.sv-text-portlet:after,
+.sv-image-portlet:after {
   background: green !important;
 }
 
 /* Integration portlets */
-.outline-portlets .sv-script-portlet,
-.outline-portlets .sv-html-portlet,
-.outline-portlets .sv-iframe-portlet {
+.sv-script-portlet,
+.sv-html-portlet,
+.sv-iframe-portlet {
   outline-color: rgba(255, 0, 0, 0.4) !important;
 }
 
-.outline-portlets .sv-script-portlet:after,
-.outline-portlets .sv-html-portlet:after,
-.outline-portlets .sv-iframe-portlet:after {
+.sv-script-portlet:after,
+.sv-html-portlet:after,
+.sv-iframe-portlet:after {
   background: #f00 !important;
 }
 
 /* Templating portlets */
-.outline-portlets .sv-jcrmenu-portlet,
-.outline-portlets .sv-searchform-portlet,
-.outline-portlets .sv-multilevellink-portlet,
-.outline-portlets .sv-related-portlet {
+.sv-jcrmenu-portlet,
+.sv-searchform-portlet,
+.sv-multilevellink-portlet,
+.sv-related-portlet {
   outline-color: rgba(150, 150, 0, 0.4) !important;
 }
 
-.outline-portlets .sv-jcrmenu-portlet:after,
-.outline-portlets .sv-searchform-portlet:after,
-.outline-portlets .sv-multilevellink-portlet:after,
-.outline-portlets .sv-related-portlet:after {
+.sv-jcrmenu-portlet:after,
+.sv-searchform-portlet:after,
+.sv-multilevellink-portlet:after,
+.sv-related-portlet:after {
   background: rgb(150, 150, 0) !important;
 }
 
 /* Interactive portlets */
-.outline-portlets .sv-form-portlet,
-.outline-portlets .sv-simplesubscription-portlet {
+.sv-form-portlet,
+.sv-simplesubscription-portlet {
   outline-color: rgba(0, 150, 150, 0.4) !important;
 }
 
-.outline-portlets .sv-form-portlet:after,
-.outline-portlets .sv-simplesubscription-portlet:after {
+.sv-form-portlet:after,
+.sv-simplesubscription-portlet:after {
   background: rgb(0, 150, 150) !important;
 }
 
 /* Social media portlets */
-.outline-portlets .sv-twittersearch-portlet {
+.sv-twittersearch-portlet {
   outline-color: rgba(255, 0, 254, 0.4) !important;
 }
 
-.outline-portlets .sv-twittersearch-portlet:after {
+.sv-twittersearch-portlet:after {
   background: #ff00fe !important;
 }
 
 /* Misc portlets */
-.outline-portlets .sv-archive-portlet,
-.outline-portlets .sv-eventcalendar-portlet {
+.sv-archive-portlet,
+.sv-eventcalendar-portlet {
   outline-color: rgba(0, 0, 255, 0.4) !important;
 }
 
-.outline-portlets .sv-archive-portlet:after,
-.outline-portlets .sv-eventcalendar-portlet:after {
+.sv-archive-portlet:after,
+.sv-eventcalendar-portlet:after {
   background: blue !important;
 }
 
 
 /* PORTLET LABELS */
 
-.outline-portlets .sv-text-portlet:after {
+.sv-text-portlet:after {
   content: "Text" !important;
 }
 
-.outline-portlets .sv-image-portlet:after {
+.sv-image-portlet:after {
   content: "Bild" !important;
 }
 
-.outline-portlets .sv-script-portlet:after {
+.sv-script-portlet:after {
   content: "Skript" !important;
 }
 
-.outline-portlets .sv-html-portlet:after {
+.sv-html-portlet:after {
   content: "HTML" !important;
 }
 
-.outline-portlets .sv-iframe-portlet:after {
+.sv-iframe-portlet:after {
   content: "iFrame" !important;
 }
 
-.outline-portlets .sv-archive-portlet:after {
+.sv-archive-portlet:after {
   content: "Nyheter" !important;
 }
 
-.outline-portlets .sv-jcrmenu-portlet:after {
+.sv-jcrmenu-portlet:after {
   content: "Meny" !important;
 }
 
-.outline-portlets .sv-form-portlet:after {
+.sv-form-portlet:after {
   content: "E-postformulär" !important;
 }
 
-.outline-portlets .sv-searchform-portlet:after {
+.sv-searchform-portlet:after {
   content: "Sökruta" !important;
 }
 
-.outline-portlets .sv-multilevellink-portlet:after {
+.sv-multilevellink-portlet:after {
   content: "Flernivålänk" !important;
 }
 
-.outline-portlets .sv-related-portlet:after {
+.sv-related-portlet:after {
   content: "Relaterad information" !important;
 }
 
-.outline-portlets .sv-simplesubscription-portlet:after {
+.sv-simplesubscription-portlet:after {
   content: "Prenumerera" !important;
 }
 
-.outline-portlets .sv-twittersearch-portlet:after {
+.sv-twittersearch-portlet:after {
   content: "Twitter-sökning" !important;
 }
 
-.outline-portlets .sv-eventcalendar-portlet:after {
+.sv-eventcalendar-portlet:after {
   content: "Evenemangskalender" !important;
 }
-
