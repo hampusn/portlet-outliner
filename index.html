@@ -25,7 +25,7 @@
     <p>För att installera den här funktionen drar och släpper du länken nedan på din bokmärkesrad.</p>
 
     <p class="bookmarklet">
-      <a class="bookmarklet-btn" href='javascript:!function(a,b,c,d){if(!a.getElementById(b)){var e=a.createElement("link");e.setAttribute("id",b),e.setAttribute("rel","stylesheet"),e.setAttribute("type","text/css"),e.setAttribute("href",d),a.head.appendChild(e)}a.body.classList.toggle(c)}(document,"portlet-outliner","outline-portlets","https://hampusn.github.io/portlet-outliner/portlet-outliner.css");'>Visa/Dölj portlets</a>
+      <a class="bookmarklet-btn" href='javascript:!function(a,b,c){var d=a.getElementById(b);d?d.sheet.disabled=!d.sheet.disabled:(d=a.createElement("link"),d.setAttribute("id",b),d.setAttribute("rel","stylesheet"),d.setAttribute("type","text/css"),d.setAttribute("href",c),a.head.appendChild(d))}(document,"portlet-outliner","https://hampusn.github.io/portlet-outliner/portlet-outliner.css");'>Visa/Dölj portlets</a>
     </p>
   </div>
 
