@@ -32,6 +32,19 @@ div[class*="portlet"][id]:hover:after {
   z-index: 20;
 }
 
+div[class*="portlet"][id]:hover > div[id]:first-child:after {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  content: attr(id);
+  display: block;
+  font-size: 1em;
+  left: 0;
+  line-height: 1;
+  padding: 0.3em;
+  position: absolute;
+  top: 0;
+}
+
 
 /* PORTLET BACKGROUNDS */
 
