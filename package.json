@@ -1,0 +1,19 @@
+{
+  "name": "hampusn-portlet-outliner",
+  "version": "0.1.0",
+  "description": "Bookmarklet to toggle outline and info for portlets and apps on a sitevision page.",
+  "main": "portlet-outliner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hampusn/portlet-outliner.git"
+  },
+  "author": "Hampus Nordin <nordin.hampus@gmail.com> (https://hampus.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hampusn/portlet-outliner/issues"
+  },
+  "homepage": "https://github.com/hampusn/portlet-outliner#readme"
+}
