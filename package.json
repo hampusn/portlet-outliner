@@ -1,6 +1,6 @@
 {
   "name": "hampusn-portlet-outliner",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Bookmarklet to toggle outline and info for portlets and apps on a sitevision page.",
   "main": "portlet-outliner.js",
   "scripts": {
